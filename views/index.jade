@@ -1,6 +1,7 @@
 extends layout
 
 block body
+
   div(ng-controller='AppCtrl')
     h2.main-heading You want to do the things {{name}}
     ul.menu
@@ -9,7 +10,7 @@ block body
       li
         a(href='view2') view2
 
-    #wallpaper(ng-view)
+    div(ng-view)
 
     div
       | Angular seed app: v

@@ -29,16 +29,18 @@
   padding: 0;
 }
 
-#wallpaper {
-  background-image: url('./public/images/bluewallpaper.jpg');
-}
-
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: green; 
+  background-image: url('../images/bluewallpaper.jpg');
+  background-size: cover;  
+}
+
+.heading-holder {
+  background-color: #004E63; opacity: 0.75; filter: alpha(opacity=75);
+  max-width: 40%;
 }
 
 
@@ -51,11 +53,14 @@ SHARED
   margin-bottom: 20px;
   padding-top: 20px;
   font-size: 40px;
+  color: white;
+  font-weight: bold;
 }
 
 .the-heading {
   text-align: center;
   margin-bottom: 50px;
+  color: white;
 }
 
 
@@ -65,11 +70,10 @@ INDEX/LOGIN
 
 .login-holder {
   padding: 30px;
-  background-color: white;
   max-width: 30%;
   margin: 0 auto;
   display: block;
-  background-color: #004E63;
+  background-color: #004E63; opacity: 0.75; filter: alpha(opacity=75);
   color: white;
 }
 
@@ -79,19 +83,18 @@ FORM ENTRY
 **********************/
 
 .content-here {
-  background-color: white;
   height: 850px;
   padding-top: 100px;
 }
 
 .entering-data {
   padding: 30px;
-  background-color: white;
   max-width: 30%;
   margin: 0 auto;
   display: block;
-  background-color: #004E63;
+  background-color: #004E63; opacity: 0.75; filter: alpha(opacity=75);
   color: white;
+  margin-bottom: 50px;
 }
 
 .formfield {
@@ -105,4 +108,17 @@ FORM ENTRY
 input:focus {
   outline: none !important;
   border-color: #FF3823;
+}
+
+/**********************
+LIST
+**********************/
+
+.listing-data {
+  padding: 30px;
+  max-width: 30%;
+  margin: 0 auto;
+  display: block;
+  background-color: #004E63; opacity: 0.75; filter: alpha(opacity=75);
+  color: white;
 }

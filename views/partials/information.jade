@@ -14,3 +14,18 @@ h1.the-heading {{words}}
         input#endDate(type='text', name='completeBy')
       input.submitButton.btn.btn-warning(type='submit')
 
+  .listing-data
+    .row
+      .col-md-2.dk-blue.bottom-height
+      .col-md-8.white
+        .list-body
+          ul()
+            li #{title}
+            li #{description}
+            li #{priority}
+            li #{completeBy}
+            button.btn.btn-warning.dropdown-toggle.deleteButton(, type='button', data-toggle='dropdown', aria-expanded='false') Delete
+              a(href='..routes/params/delete')
+            button.btn.btn-warning.dropdown-toggle.editButton(, type='button', data-toggle='dropdown', aria-expanded='false') Edit
+              a(href='params/:id')
+      .col-md-2.dk-blue.bottom-height
