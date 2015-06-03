@@ -1,0 +1,16 @@
+h1 {{words}}
+
+.content-here
+  .entering-data
+    form#DoThisSubmitForm
+      input#hidden(type='hidden', name='db_id')
+      .formfield Title
+        input#title(type='text', name='title')
+      .formfield Description
+        input#size(type='text', name='description')
+      .formfield Priority
+        input#price(type='text', name='priority')
+      .formfield Complete By
+        input#endDate(type='text', name='completeBy')
+      input.submitButton(type='submit')
+

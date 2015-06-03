@@ -1,0 +1,16 @@
+  .listing-data
+    .row
+      .col-md-2.dk-blue.bottom-height
+      .col-md-8.white
+        .list-body
+        each dothis in toDoList
+          ul(id="#{'dothis_'+dothis._id}")
+            li #{dothis.title}
+            li #{dothis.description}
+            li #{dothis.priority}
+            li #{dothis.completeBy}
+            button.btn.btn-warning.dropdown-toggle.deleteButton(id='#{dothis._id}', type='button', data-toggle='dropdown', aria-expanded='false') Delete
+              a(href='..routes/params/delete')
+            button.btn.btn-warning.dropdown-toggle.editButton(id='#{dothis._id}', type='button', data-toggle='dropdown', aria-expanded='false') Edit
+              a(href='params/:id')
+      .col-md-2.dk-blue.bottom-height

@@ -18,6 +18,22 @@ config(function ($routeProvider, $locationProvider) {
       templateUrl: 'partials/partial2',
       controller: 'MyCtrl2'
     }).
+    when('/register', {
+      templateUrl: 'partials/register',
+      controller: 'RegisterController'
+    }).
+    when('/login', {
+      templateUrl: 'partials/login',
+      controller: 'LoginController'
+    }).
+    when('/index', {
+      templateUrl: 'partials/index',
+      controller: 'IndexController'
+    }).
+    when('/information', {
+      templateUrl: 'partials/information',
+      controller: 'InformationController'
+    }).
     otherwise({
       redirectTo: '/view1'
     });
