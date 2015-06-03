@@ -1,11 +1,11 @@
-h1 {{words}}
+h1.the-heading {{words}}
 
-h1 Register to create tasks     
-  form#registerForm(method='POST', action='/user/register')
+.login-holder
+  form#loginForm(method='POST', action='/user/register')
     .formfield
-      .formfield--prompt Username:        
+      .formfield--prompt Username <br />       
         input#username(type='text', name='username')      
       .formfield
-        .formfield--prompt Password:  
+        .formfield--prompt Password <br />
           input#password(type='password', name='password')
-      input.submitButton(type='submit')
+      input.submitButton.btn.btn-warning(type='submit')

@@ -16,29 +16,29 @@ angular.module('myApp.controllers', []).
       $scope.name = 'Error!';
     });
 
-    }).
-    controller('MyCtrl1', function ($scope) {
-      // write Ctrl here
+  }).
+  controller('MyCtrl1', function ($scope) {
+    // write Ctrl here
 
-    }).
-    controller('RegisterController', function ($scope) {
-      $scope.words = "Register here, yo!!";
+  }).
+  controller('RegisterController', function ($scope) {
+    $scope.words = "You can register here if you like";
 
-    }).
-    controller('LoginController', function ($scope) {
-      $scope.words = "Login here, yo!!";
+  }).
+  controller('LoginController', function ($scope) {
+    $scope.words = "Login here to be so super organized";
 
-    }).
-    controller('IndexController', function ($scope) {
-      $scope.words = "Index page here!!";
+  }).
+  controller('IndexController', function ($scope) {
+    $scope.words = "Login here to do the things";
 
-    }).
-    controller('InformationController', function ($scope) {
-      $scope.words = "Page for both form AND the list here!!";
+  }).
+  controller('InformationController', function ($scope) {
+    $scope.words = "Wield ultimate to do list power here";
 
-    }).
+  }).
 
-    controller('MyCtrl2', function ($scope) {
-      // write Ctrl here
+  controller('MyCtrl2', function ($scope) {
+    // write Ctrl here
 
   });

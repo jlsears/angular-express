@@ -29,8 +29,48 @@
   padding: 0;
 }
 
+#wallpaper {
+  background-image: url('./public/images/bluewallpaper.jpg');
+}
+
 body {
-  background-color: green;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: green; 
+}
+
+
+/**********************
+SHARED
+**********************/
+
+.main-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  font-size: 40px;
+}
+
+.the-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+/**********************
+INDEX/LOGIN
+**********************/
+
+.login-holder {
+  padding: 30px;
+  background-color: white;
+  max-width: 30%;
+  margin: 0 auto;
+  display: block;
+  background-color: #004E63;
+  color: white;
 }
 
 
@@ -50,8 +90,8 @@ FORM ENTRY
   max-width: 30%;
   margin: 0 auto;
   display: block;
-  background-color: #FEF8A0;
-  color: #DC4C18;
+  background-color: #004E63;
+  color: white;
 }
 
 .formfield {
